@@ -1,0 +1,156 @@
+/* label {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+    width: 400px;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    height: 20px;
+    flex: 0 0 200px;
+    margin-left: 10px;
+  } */
+
+  header{
+    display: flex;
+    flex-flow: column;
+}
+header img{
+    align-self: center;
+}
+
+h1
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-style:bold;
+    font-size:30px;  
+    box-align:center;
+    color:#6B5ACD;
+    text-align: center;
+}
+.h2{
+  font-family: 'Times New Roman', Times, serif;
+  color: #854FAB;
+}
+.h3{
+  font-family: 'Times New Roman', Times, serif;
+  color: purple;
+}
+.h4{
+  font-family: 'Times New Roman', Times, serif;
+  color: #21AE44;
+}
+
+.h5{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: bold;
+  font-size: 30px;
+  box-align: center;
+  color: red;
+}
+
+label
+{
+ margin-right: 10px;
+}
+input
+{
+  height: 30px;
+  width: 195px;
+ margin-left: 10px;
+} 
+
+input[type="checkbox"]
+{
+  margin: 10px;
+  width: 15px; 
+  height: 15px;
+}
+
+input[type="radio"]
+{
+  margin: 10px;
+  width: 20px; 
+  height: 15px;
+
+}
+select
+{
+  margin-left: 10px 
+}
+
+form
+{
+  background-color: #6B5ACD;
+  justify-content: center;
+  align-items: center;
+}
+
+fieldset
+{
+  color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-Btns{
+ 
+  text-align: center;
+}
+.form-Btns input{
+  align-self: center;
+  padding: 5px;
+  width: 70px;
+  cursor: pointer;
+}
+
+
+
+/* label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  } */
+  
+
+
+
+   
+
+   * {
+    box-sizing: border-box;
+  }
+  
+  label {
+    padding: 8px 8px 8px 0;
+    display: inline-block;
+  }
+   
+  .container
+   {
+    border-radius: 1px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col-25 
+  {
+    float: left;
+    width: 25%;
+    margin-top: 3px;
+  }
+  
+  .col-75
+   {
+    float: left;
+    width: 75%;
+    margin-top: 3px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

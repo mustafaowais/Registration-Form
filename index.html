@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Registration Form</title>
+
+
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <header><img src="images/saylani-logo.png" alt="Logo"/></header>>
+    <h1> <u> STUDENT REGISTRATION FORM </u> </h1><br>
+
+    <form name="myForm" action="thanx.html">
+        <fieldset>
+            <div class="row">
+                <div class="col-25">
+                    <label>FIRST NAME</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="firstname" placeholder="Enter first name" maxlength="30"
+                        required="required" />
+                    <small>(max 30 characters a-z and A-Z)</small>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label>LAST NAME</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="lastname" placeholder="Enter last name" maxlength="30"
+                        required="required" />
+                    <small>(max 30 characters a-z and A-Z)</small>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Date Of Birth">Date Of Birth</label>
+                </div>
+                <div class="col-75">
+                    <select name="Date" style="width:6%;" required="required" >
+                        <option>Day:</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                    </select>
+                    <select name="Month" style="width:7%;" required="required">
+                        <option value="">Month:</option>
+                        <option value="">January</option>
+                        <option value="">Fabuary</option>
+                        <option value="">March</option>
+                        <option value="">April</option>
+                        <option value="">May</option>
+                        <option value="">June</option>
+                        <option value="">July</option>
+                        <option value="">August</option>
+                        <option value="">September</option>
+                        <option value="">October</option>
+                        <option value="">November</option>
+                        <option value="">December</option>
+                    </select>
+                    <input style="height: 5%;width: 5%;" type="number" name="dateofbirth" placeholder="Year:"
+                        required="required" min="1900" max="2020" />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label>EMAIL ID</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" name="email" placeholder="Enter email address" required="required" />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label>MOBILE NUMBER</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" placeholder="Enter mobile number"
+                        onKeyPress="if(this.value.length==10) return false;" min="3" required="required" />
+                    <small>(10 digit number)</small>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label>GENDER</label>
+                </div>
+                <div class="col-75">
+                    &nbsp;&nbsp;Male
+                    <input type="radio" name="gender" value="male" required="required" />
+                    Female
+                    <input type="radio" name="gender" value="female" required="required" />
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label>ADDRESS</label>
+                </div>&nbsp;&nbsp;
+                <textarea rows="4" cols="40" id="address"></textarea>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-25">
+                    <label>CITY</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="city" placeholder="Enter city name" maxlength="30" required="required" />
+                    <small>(max 30 characters a-z and A-Z)</small>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label>PIN CODE</label>
+                </div>
+                <div class="col-75">
+                    <input type="number" name="pincode" placeholder="Enter pincode" min="0"
+                        onKeyPress="if(this.value.length==6) return false;">
+                    <small>(6 digit number)</small>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label>STATE</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="state" placeholder="Enter state" maxlength="30" required="required" />
+                    <small>(max 30 characters a-z and A-Z)</small>
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-25">
+                    <label>COUNTRY</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" name="country" placeholder="Enter country" required="required" />
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-25">
+                    <label>HOBBIES</label>
+                </div>
+                <div class="col-75">
+                    Drawing
+                    <input type="checkbox" name="hobbies" />
+                    Singing
+                    <input type="checkbox" name="hobbies" />
+                    Dancing
+                    <input type="checkbox" name="hobbies" />
+                    Sketching
+                    <input type="checkbox" name="hobbies" />
+                    <br>
+                    Others
+                    <input type="checkbox" name="hobbies" /><input type="text" name="hobbies" />
+                </div>
+            </div>
+            <br />
+            <div class="row">
+                <div class="col-25">
+                    <label>QUALIFICATION</label>
+                </div>
+                <div class="col-75">
+                    <table border="0px" style="border:10px" width=80% height=200>
+                        <tr>
+                            <td width=7%> S.No.</td>
+                            <td width=7%> Examination</td>
+                            <td align="center" width=22%> Board </td>
+                            <td align="center" width=22%> Percentage </td>
+                            <td align="center" width=22%> Year of Passing </td>
+                        </tr>
+
+                        <tr>
+                            <td> 1 </td>
+                            <td> Class X</td>
+                            <td><input style="margin-left:0px;" type="text1" name="qualification-board" /></td>
+                            <td><input style="margin-left:0px" type="text1" name="qualification-percent" /></td>
+                            <td><input style="margin-left:0px" type="text1" name="qualification-yop" /></td>
+                        </tr>
+
+                        <tr>
+                            <td> 2 </td>
+                            <td> Class XII</td>
+                            <td><input style="margin-left:0px" type="text1" name="qualification-board" /></td>
+                            <td><input style="margin-left:0px" type="text1" name="qualification-percent" /></td>
+                            <td><input style="margin-left:0px" type="text1" name="qualification-yop" /></td>
+                        </tr>
+
+                        <tr>
+                            <td> 3 </td>
+                            <td> Graduation</td>
+                            <td> <input style="margin-left:0px" type="text1" name="qualification-board" /></td>
+                            <td> <input style="margin-left:0px" type="text1" name="qualification-percent" /></td>
+                            <td> <input style="margin-left:0px" type="text1" name="qualification-yop" /></td>
+                        </tr>
+
+                        <tr>
+                            <td> 4 </td>
+                            <td> Masters</td>
+                            <td> <input style="margin-left:0px" type="text1" name="qualification-board" /></td>
+                            <td> <input style="margin-left:0px" type="text1" name="qualification-percent" /></td>
+                            <td> <input style="margin-left:0px" type="text1" name="qualification-yop" /></td>
+                        </tr>
+
+                        <tr>
+                            <td style="border:0px"></td>
+                            <td style="border:0px"></td>
+                            <td align="center"> (10 char max) </td>
+                            <td align="center"> (upto 2 decimal) </td>
+                            <td style="border:0px"></td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label>COURSES<br>APPLIED FOR</label>
+                </div>
+                <div class="col-75">
+                    BCA
+                    <input type="radio" name="COURSES" value="bca" required="required" />
+                    B.Com
+                    <input type="radio" name="COURSES" value="bcom" required="required" />
+                    B.Sc
+                    <input type="radio" name="COURSES" value="bsc" required="required" />
+                    B.A
+                    <input type="radio" name="COURSES" value="ba" required="required" />
+                </div>
+            </div>
+            <br />
+            <div class="form-Btns">
+                <input type="Submit" value="Submit">
+                <input type="Reset" value="Reset">
+            </div>
+
+        </fieldset>
+    </form>
+
+<br><br>
+    <h1 class=h5> <strong><u> Name:Mustafa Owais</u></strong></h1>
+    <h1 class=h5> <strong><u>Roll No:WM8846 </u></strong></h1>
+</body>
+
+</html>
